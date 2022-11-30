@@ -22,7 +22,7 @@
  */
 
 function isTrue(input){
-    return input == true
+    return input === true
 }
 
 function isFalse(input){
@@ -37,32 +37,26 @@ function addOne(input){
     if (input === true){
         return parseInt(input)
     }else
-    return Number(input) + 1
+        return Number(input) + 1
 }
 
-function isEven(input){
-    if(input === false){
-        return false
-    }else if(input % 2 == 0){
-        return true
-    }else{
-        return false
-    }
+function isEven(input) {
+    return parseFloat(input) % 2 === 0;
 }
 
-function isIdentical(input1, input2){
+function isIdentical(input1, input2) {
     return input1 === input2
 }
 
-function isEqual(input1, input2){
+function isEqual(input1, input2) {
     return input1 == input2
 }
 
-function or(input1, input2){
+function or(input1, input2) {
     return input1 || input2
 }
 
-function and(input1, input2){
+function and(input1, input2) {
     return input1 && input2
 }
 
